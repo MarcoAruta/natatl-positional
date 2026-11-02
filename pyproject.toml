@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "natatl-positional"
+version = "0.1.0"
+description = "Standalone positional guess-and-check and POS2NAT for memoryless NatATL"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.scripts]
+natatl-positional = "natatl_positional.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["natatl_positional*"]
