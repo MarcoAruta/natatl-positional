@@ -1,0 +1,148 @@
+{
+  "status": "true",
+  "satisfied": true,
+  "formula": "<{1},2>F (goal)",
+  "initial_state": "start",
+  "engine": "positional",
+  "compiler": "hybrid",
+  "appropriateness": "first-match",
+  "queried_states": [
+    "start"
+  ],
+  "definitely_satisfying_states": [
+    "start"
+  ],
+  "definitely_failing_states": [],
+  "unknown_states": [],
+  "query_complete": true,
+  "state_set_complete": false,
+  "winning_strategy": {
+    "cost": 2,
+    "agents": {
+      "1": {
+        "cost": 2,
+        "rules": [
+          {
+            "guard": "p",
+            "guard_node": 0,
+            "action": "B",
+            "cost": 1
+          },
+          {
+            "guard": "T",
+            "guard_node": 1,
+            "action": "A",
+            "cost": 1
+          }
+        ]
+      }
+    },
+    "guard_dag": [
+      {
+        "op": "atom",
+        "name": "p"
+      },
+      {
+        "op": "true"
+      }
+    ],
+    "selected_actions": {
+      "start": [
+        "A"
+      ],
+      "middle": [
+        "B"
+      ],
+      "goal": [
+        "A"
+      ],
+      "trap": [
+        "A"
+      ]
+    }
+  },
+  "modalities": [
+    {
+      "formula": "<{1},2>F (goal)",
+      "coalition": [
+        1
+      ],
+      "bound": 2,
+      "definite_winners": [
+        "start"
+      ],
+      "possible_winners": [
+        "start"
+      ],
+      "statistics": {
+        "candidates_examined": 3,
+        "duplicate_policies_skipped": 0,
+        "cegar_candidates_skipped": 1,
+        "pos2nat_conversions": 2,
+        "exact_compilations": 2,
+        "cost_rejections": 0,
+        "raw_budget_failures": 2,
+        "unresolved_rejections": 0,
+        "pruned_models": 2,
+        "temporal_checks": 2,
+        "nogoods_learned": 1,
+        "raw_cost_min": 63,
+        "raw_cost_max": 63,
+        "enumeration_exhausted": false,
+        "label_classes": 3,
+        "positional_space_size": 8,
+        "unquotiented_positional_space_size": 16,
+        "guard_masks": 4,
+        "guard_cost_complete_through": 1
+      },
+      "notes": []
+    }
+  ],
+  "complexity_bound": 2,
+  "witness_complexity": 2,
+  "statistics": {
+    "candidates_examined": 3,
+    "duplicate_policies_skipped": 0,
+    "cegar_candidates_skipped": 1,
+    "pos2nat_conversions": 2,
+    "exact_compilations": 2,
+    "cost_rejections": 0,
+    "raw_budget_failures": 2,
+    "unresolved_rejections": 0,
+    "pruned_models": 2,
+    "temporal_checks": 2,
+    "nogoods_learned": 1,
+    "raw_cost_min": 63,
+    "raw_cost_max": 63,
+    "enumeration_exhausted": false,
+    "label_classes": 3,
+    "positional_space_size": 8,
+    "unquotiented_positional_space_size": 16,
+    "guard_masks": 4,
+    "guard_cost_complete_through": 1
+  },
+  "counterexamples": [
+    {
+      "start": "start",
+      "path": [
+        "start",
+        "middle",
+        "trap",
+        "trap"
+      ],
+      "loop_start": 2,
+      "joint_actions": [
+        [
+          "A"
+        ],
+        [
+          "A"
+        ],
+        [
+          "A"
+        ]
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.0004055030003655702
+}

@@ -1,0 +1,151 @@
+{
+  "states": [
+    "s0",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7"
+  ],
+  "propositions": [
+    "p",
+    "goal"
+  ],
+  "number_of_agents": 1,
+  "initial_state": "s0",
+  "labels": {
+    "s0": [],
+    "s1": [
+      "p"
+    ],
+    "s2": [],
+    "s3": [
+      "p"
+    ],
+    "s4": [],
+    "s5": [
+      "p"
+    ],
+    "s6": [],
+    "s7": [
+      "goal",
+      "p"
+    ]
+  },
+  "transitions": {
+    "s0": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "s1"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "s0"
+      }
+    ],
+    "s1": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "s1"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "s2"
+      }
+    ],
+    "s2": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "s3"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "s2"
+      }
+    ],
+    "s3": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "s3"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "s4"
+      }
+    ],
+    "s4": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "s5"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "s4"
+      }
+    ],
+    "s5": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "s5"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "s6"
+      }
+    ],
+    "s6": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "s7"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "s6"
+      }
+    ],
+    "s7": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "s7"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "s7"
+      }
+    ]
+  }
+}

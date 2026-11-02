@@ -1,0 +1,82 @@
+{
+  "states": [
+    "start",
+    "middle",
+    "goal",
+    "trap"
+  ],
+  "propositions": [
+    "p",
+    "goal"
+  ],
+  "number_of_agents": 1,
+  "initial_state": "start",
+  "labels": {
+    "start": [],
+    "middle": [
+      "p"
+    ],
+    "goal": [
+      "goal"
+    ],
+    "trap": []
+  },
+  "transitions": {
+    "start": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "middle"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "trap"
+      }
+    ],
+    "middle": [
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "trap"
+      }
+    ],
+    "goal": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "goal"
+      }
+    ],
+    "trap": [
+      {
+        "actions": [
+          "A"
+        ],
+        "to": "trap"
+      },
+      {
+        "actions": [
+          "B"
+        ],
+        "to": "trap"
+      }
+    ]
+  }
+}

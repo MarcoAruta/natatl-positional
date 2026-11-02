@@ -1,0 +1,248 @@
+{
+  "strategy": {
+    "cost": 63,
+    "agents": {
+      "1": {
+        "cost": 63,
+        "rules": [
+          {
+            "guard": "(!(p) && !(goal))",
+            "guard_node": 4,
+            "action": "A",
+            "cost": 5
+          },
+          {
+            "guard": "((!(p) && goal) && !(((false || ((!(p) && !(goal)) && !(false))) || ((p && !(goal)) && !((false || ((!(p) && !(goal)) && !(false))))))))",
+            "guard_node": 26,
+            "action": "A",
+            "cost": 33
+          },
+          {
+            "guard": "((p && !(goal)) && !((false || ((!(p) && !(goal)) && !(false)))))",
+            "guard_node": 23,
+            "action": "B",
+            "cost": 16
+          },
+          {
+            "guard": "((!(p) && !(goal)) && !(false))",
+            "guard_node": 16,
+            "action": "A",
+            "cost": 8
+          },
+          {
+            "guard": "T",
+            "guard_node": 27,
+            "action": "A",
+            "cost": 1
+          }
+        ]
+      }
+    },
+    "guard_dag": [
+      {
+        "op": "atom",
+        "name": "p"
+      },
+      {
+        "op": "not",
+        "args": [
+          0
+        ]
+      },
+      {
+        "op": "atom",
+        "name": "goal"
+      },
+      {
+        "op": "not",
+        "args": [
+          2
+        ]
+      },
+      {
+        "op": "and",
+        "args": [
+          1,
+          3
+        ]
+      },
+      {
+        "op": "atom",
+        "name": "p"
+      },
+      {
+        "op": "not",
+        "args": [
+          5
+        ]
+      },
+      {
+        "op": "atom",
+        "name": "goal"
+      },
+      {
+        "op": "and",
+        "args": [
+          6,
+          7
+        ]
+      },
+      {
+        "op": "false"
+      },
+      {
+        "op": "atom",
+        "name": "p"
+      },
+      {
+        "op": "not",
+        "args": [
+          10
+        ]
+      },
+      {
+        "op": "atom",
+        "name": "goal"
+      },
+      {
+        "op": "not",
+        "args": [
+          12
+        ]
+      },
+      {
+        "op": "and",
+        "args": [
+          11,
+          13
+        ]
+      },
+      {
+        "op": "not",
+        "args": [
+          9
+        ]
+      },
+      {
+        "op": "and",
+        "args": [
+          14,
+          15
+        ]
+      },
+      {
+        "op": "or",
+        "args": [
+          9,
+          16
+        ]
+      },
+      {
+        "op": "atom",
+        "name": "p"
+      },
+      {
+        "op": "atom",
+        "name": "goal"
+      },
+      {
+        "op": "not",
+        "args": [
+          19
+        ]
+      },
+      {
+        "op": "and",
+        "args": [
+          18,
+          20
+        ]
+      },
+      {
+        "op": "not",
+        "args": [
+          17
+        ]
+      },
+      {
+        "op": "and",
+        "args": [
+          21,
+          22
+        ]
+      },
+      {
+        "op": "or",
+        "args": [
+          17,
+          23
+        ]
+      },
+      {
+        "op": "not",
+        "args": [
+          24
+        ]
+      },
+      {
+        "op": "and",
+        "args": [
+          8,
+          25
+        ]
+      },
+      {
+        "op": "true"
+      }
+    ]
+  },
+  "trace": [
+    {
+      "state": "start",
+      "marking": 0,
+      "phase": "reachable",
+      "branch": "uncovered",
+      "guard_cost": 8,
+      "strategy_cost": 9,
+      "coverage_cost": 10
+    },
+    {
+      "state": "middle",
+      "marking": 1,
+      "phase": "reachable",
+      "branch": "uncovered",
+      "guard_cost": 16,
+      "strategy_cost": 25,
+      "coverage_cost": 27
+    },
+    {
+      "state": "goal",
+      "marking": 2,
+      "phase": "reachable",
+      "branch": "uncovered",
+      "guard_cost": 33,
+      "strategy_cost": 58,
+      "coverage_cost": 61
+    },
+    {
+      "state": "trap",
+      "marking": null,
+      "phase": "extension",
+      "branch": "overwrite",
+      "guard_cost": 5,
+      "strategy_cost": 63,
+      "coverage_cost": 61
+    }
+  ],
+  "reachable_layers": [
+    [
+      "start"
+    ],
+    [
+      "middle"
+    ],
+    [
+      "goal"
+    ]
+  ]
+}

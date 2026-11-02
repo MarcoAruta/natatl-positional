@@ -1,0 +1,44 @@
+test_conflicting_equal_labels_rejected (test_conversion_and_minimum.ConversionAndMinimum.test_conflicting_equal_labels_rejected) ... ok
+test_first_match_and_global (test_conversion_and_minimum.ConversionAndMinimum.test_first_match_and_global) ... ok
+test_guard_table_shortest_costs (test_conversion_and_minimum.ConversionAndMinimum.test_guard_table_shortest_costs) ... ok
+test_left_write_prepends (test_conversion_and_minimum.ConversionAndMinimum.test_left_write_prepends) ... ok
+test_literal_algorithm_and_cost (test_conversion_and_minimum.ConversionAndMinimum.test_literal_algorithm_and_cost) ... ok
+test_minimum_is_an_ordered_list (test_conversion_and_minimum.ConversionAndMinimum.test_minimum_is_an_ordered_list) ... ok
+test_omitted_valuations_are_dont_cares (test_conversion_and_minimum.ConversionAndMinimum.test_omitted_valuations_are_dont_cares) ... ok
+test_repeated_label_takes_overwrite_branch (test_conversion_and_minimum.ConversionAndMinimum.test_repeated_label_takes_overwrite_branch) ... ok
+test_whole_model_extension (test_conversion_and_minimum.ConversionAndMinimum.test_whole_model_extension) ... ok
+test_witness_roundtrip (test_conversion_and_minimum.ConversionAndMinimum.test_witness_roundtrip) ... ok
+test_binary_labels_and_duplicate_sections (test_model_and_guards.ModelAndGuards.test_binary_labels_and_duplicate_sections) ... ok
+test_formula_surface_and_invalid_inputs (test_model_and_guards.ModelAndGuards.test_formula_surface_and_invalid_inputs) ... ok
+test_full_valuation_is_not_positive_subset (test_model_and_guards.ModelAndGuards.test_full_valuation_is_not_positive_subset) ... ok
+test_guard_cost_and_dag (test_model_and_guards.ModelAndGuards.test_guard_cost_and_dag) ... ok
+test_invalid_transitions_are_errors (test_model_and_guards.ModelAndGuards.test_invalid_transitions_are_errors) ... ok
+test_json_roundtrip (test_model_and_guards.ModelAndGuards.test_json_roundtrip) ... ok
+test_lowercase_t_is_an_atom (test_model_and_guards.ModelAndGuards.test_lowercase_t_is_an_atom) ... ok
+test_malformed_json_shapes_are_model_errors (test_model_and_guards.ModelAndGuards.test_malformed_json_shapes_are_model_errors) ... ok
+test_nominal_actions_and_arity (test_model_and_guards.ModelAndGuards.test_nominal_actions_and_arity) ... ok
+test_temporal_looking_atoms_are_boolean (test_model_and_guards.ModelAndGuards.test_temporal_looking_atoms_are_boolean) ... ok
+test_cegar_is_observationally_equivalent (test_refinement_and_random.RefinementAndBroaderInputs.test_cegar_is_observationally_equivalent) ... ok
+test_every_learned_nogood_preserves_a_violating_path (test_refinement_and_random.RefinementAndBroaderInputs.test_every_learned_nogood_preserves_a_violating_path) ... ok
+test_random_multiagent_against_classic_generator (test_refinement_and_random.RefinementAndBroaderInputs.test_random_multiagent_against_classic_generator) ... ok
+test_random_nonconstant_protocols_against_syntax_oracle (test_refinement_and_random.RefinementAndBroaderInputs.test_random_nonconstant_protocols_against_syntax_oracle) ... ok
+test_supplied_deterministic_vitamin_models (test_refinement_and_random.RefinementAndBroaderInputs.test_supplied_deterministic_vitamin_models) ... ok
+test_all_binary_deterministic_games (test_search_semantics.ExhaustiveTwoStateOracle.test_all_binary_deterministic_games) ... ok
+test_all_opponent_moves_survive (test_search_semantics.SearchSemantics.test_all_opponent_moves_survive) ... ok
+test_cli_check_verify_and_convert (test_search_semantics.SearchSemantics.test_cli_check_verify_and_convert) ... ok
+test_global_and_operational_are_not_interchanged (test_search_semantics.SearchSemantics.test_global_and_operational_are_not_interchanged) ... ok
+test_indistinguishable_states (test_search_semantics.SearchSemantics.test_indistinguishable_states) ... ok
+test_initial_query_and_full_state_sets (test_search_semantics.SearchSemantics.test_initial_query_and_full_state_sets) ... ok
+test_malformed_input_is_not_a_negative_formula (test_search_semantics.SearchSemantics.test_malformed_input_is_not_a_negative_formula) ... ok
+test_nested_modalities_use_original_game (test_search_semantics.SearchSemantics.test_nested_modalities_use_original_game) ... ok
+test_raw_incompleteness_survives_negation (test_search_semantics.SearchSemantics.test_raw_incompleteness_survives_negation) ... ok
+test_raw_pos2nat_can_return_its_own_winning_witness (test_search_semantics.SearchSemantics.test_raw_pos2nat_can_return_its_own_winning_witness) ... ok
+test_rejection_occurs_before_pruning (test_search_semantics.SearchSemantics.test_rejection_occurs_before_pruning) ... ok
+test_resource_limits_preserve_unknown (test_search_semantics.SearchSemantics.test_resource_limits_preserve_unknown) ... ok
+test_switch_budget_and_witness (test_search_semantics.SearchSemantics.test_switch_budget_and_witness) ... ok
+test_undeclared_or_disabled_supplied_action_rejected (test_search_semantics.SearchSemantics.test_undeclared_or_disabled_supplied_action_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 1.068s
+
+OK

@@ -1,0 +1,178 @@
+{
+  "states": [
+    "s0",
+    "left",
+    "right",
+    "goal",
+    "trap"
+  ],
+  "propositions": [
+    "a",
+    "danger"
+  ],
+  "number_of_agents": 2,
+  "initial_state": "s0",
+  "labels": {
+    "s0": [],
+    "left": [],
+    "right": [],
+    "goal": [
+      "a"
+    ],
+    "trap": [
+      "danger"
+    ]
+  },
+  "transitions": {
+    "s0": [
+      {
+        "actions": [
+          "IDLE",
+          "IDLE"
+        ],
+        "to": "left"
+      },
+      {
+        "actions": [
+          "IDLE",
+          "BLOCK_PATH"
+        ],
+        "to": "right"
+      },
+      {
+        "actions": [
+          "MOVE_FORWARD",
+          "IDLE"
+        ],
+        "to": "trap"
+      },
+      {
+        "actions": [
+          "MOVE_FORWARD",
+          "BLOCK_PATH"
+        ],
+        "to": "trap"
+      }
+    ],
+    "left": [
+      {
+        "actions": [
+          "IDLE",
+          "IDLE"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "IDLE",
+          "BLOCK_PATH"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "MOVE_FORWARD",
+          "IDLE"
+        ],
+        "to": "trap"
+      },
+      {
+        "actions": [
+          "MOVE_FORWARD",
+          "BLOCK_PATH"
+        ],
+        "to": "trap"
+      }
+    ],
+    "right": [
+      {
+        "actions": [
+          "IDLE",
+          "IDLE"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "IDLE",
+          "BLOCK_PATH"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "MOVE_FORWARD",
+          "IDLE"
+        ],
+        "to": "trap"
+      },
+      {
+        "actions": [
+          "MOVE_FORWARD",
+          "BLOCK_PATH"
+        ],
+        "to": "trap"
+      }
+    ],
+    "goal": [
+      {
+        "actions": [
+          "IDLE",
+          "IDLE"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "IDLE",
+          "BLOCK_PATH"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "MOVE_FORWARD",
+          "IDLE"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "MOVE_FORWARD",
+          "BLOCK_PATH"
+        ],
+        "to": "goal"
+      }
+    ],
+    "trap": [
+      {
+        "actions": [
+          "IDLE",
+          "IDLE"
+        ],
+        "to": "trap"
+      },
+      {
+        "actions": [
+          "IDLE",
+          "BLOCK_PATH"
+        ],
+        "to": "trap"
+      },
+      {
+        "actions": [
+          "MOVE_FORWARD",
+          "IDLE"
+        ],
+        "to": "trap"
+      },
+      {
+        "actions": [
+          "MOVE_FORWARD",
+          "BLOCK_PATH"
+        ],
+        "to": "trap"
+      }
+    ]
+  }
+}

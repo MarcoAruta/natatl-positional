@@ -1,0 +1,115 @@
+{
+  "states": [
+    "start",
+    "goal",
+    "trap"
+  ],
+  "propositions": [
+    "goal",
+    "safe"
+  ],
+  "number_of_agents": 2,
+  "initial_state": "start",
+  "labels": {
+    "start": [
+      "safe"
+    ],
+    "goal": [
+      "goal",
+      "safe"
+    ],
+    "trap": []
+  },
+  "transitions": {
+    "start": [
+      {
+        "actions": [
+          "WAIT",
+          "BLOCK"
+        ],
+        "to": "start"
+      },
+      {
+        "actions": [
+          "WAIT",
+          "ALLOW"
+        ],
+        "to": "start"
+      },
+      {
+        "actions": [
+          "GO",
+          "ALLOW"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "GO",
+          "BLOCK"
+        ],
+        "to": "trap"
+      }
+    ],
+    "goal": [
+      {
+        "actions": [
+          "WAIT",
+          "BLOCK"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "WAIT",
+          "ALLOW"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "GO",
+          "BLOCK"
+        ],
+        "to": "goal"
+      },
+      {
+        "actions": [
+          "GO",
+          "ALLOW"
+        ],
+        "to": "goal"
+      }
+    ],
+    "trap": [
+      {
+        "actions": [
+          "WAIT",
+          "BLOCK"
+        ],
+        "to": "trap"
+      },
+      {
+        "actions": [
+          "WAIT",
+          "ALLOW"
+        ],
+        "to": "trap"
+      },
+      {
+        "actions": [
+          "GO",
+          "BLOCK"
+        ],
+        "to": "trap"
+      },
+      {
+        "actions": [
+          "GO",
+          "ALLOW"
+        ],
+        "to": "trap"
+      }
+    ]
+  }
+}

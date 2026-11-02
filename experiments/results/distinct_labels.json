@@ -1,0 +1,106 @@
+[
+  {
+    "label_classes": 4,
+    "engine": "classic",
+    "status": "true",
+    "median_seconds": 0.0006123160001152428,
+    "candidates": 2,
+    "ctl_checks": 2,
+    "runs": [
+      0.0006123160001152428,
+      0.000689902999511105,
+      0.00019896099911420606
+    ]
+  },
+  {
+    "label_classes": 4,
+    "engine": "positional",
+    "status": "true",
+    "median_seconds": 0.0002634289994603023,
+    "candidates": 16,
+    "ctl_checks": 2,
+    "runs": [
+      0.00043920499956584536,
+      0.0002577600007498404,
+      0.0002634289994603023
+    ]
+  },
+  {
+    "label_classes": 8,
+    "engine": "classic",
+    "status": "true",
+    "median_seconds": 0.00041953500112867914,
+    "candidates": 2,
+    "ctl_checks": 2,
+    "runs": [
+      0.00041953500112867914,
+      0.0005684700008714572,
+      0.00020413799938978627
+    ]
+  },
+  {
+    "label_classes": 8,
+    "engine": "positional",
+    "status": "true",
+    "median_seconds": 0.005911352000111947,
+    "candidates": 256,
+    "ctl_checks": 2,
+    "runs": [
+      0.005911352000111947,
+      0.004678236999097862,
+      0.00605518900010793
+    ]
+  },
+  {
+    "label_classes": 12,
+    "engine": "classic",
+    "status": "true",
+    "median_seconds": 0.00029590699887194205,
+    "candidates": 2,
+    "ctl_checks": 2,
+    "runs": [
+      0.0003234790001442889,
+      0.00029590699887194205,
+      0.00023221099945658352
+    ]
+  },
+  {
+    "label_classes": 12,
+    "engine": "positional",
+    "status": "true",
+    "median_seconds": 0.07128592700064473,
+    "candidates": 4096,
+    "ctl_checks": 2,
+    "runs": [
+      0.08871806400020432,
+      0.07128592700064473,
+      0.07127586200113001
+    ]
+  },
+  {
+    "label_classes": 16,
+    "engine": "classic",
+    "status": "true",
+    "median_seconds": 0.00039736100006848574,
+    "candidates": 2,
+    "ctl_checks": 2,
+    "runs": [
+      0.002455413999996381,
+      0.00039736100006848574,
+      0.0003127729996776907
+    ]
+  },
+  {
+    "label_classes": 16,
+    "engine": "positional",
+    "status": "true",
+    "median_seconds": 1.2195335189990146,
+    "candidates": 65536,
+    "ctl_checks": 2,
+    "runs": [
+      1.4170154980001826,
+      1.2195335189990146,
+      1.098589852999794
+    ]
+  }
+]
