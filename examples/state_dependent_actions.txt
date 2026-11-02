@@ -1,0 +1,17 @@
+# First-match and global rule admissibility differ at the same budget.
+Transition
+I A 0
+0 I B
+0 0 I
+Name_State
+start middle goal
+Initial_State
+start
+Atomic_propositions
+p q goal
+Labelling
+1 1 0
+0 1 0
+0 0 1
+Number_of_agents
+1

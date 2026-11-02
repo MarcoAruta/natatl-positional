@@ -1,0 +1,17 @@
+# Agent 2 can block GO. All 2x2 joint choices have one successor.
+Transition
+WAIT|BLOCK,WAIT|ALLOW GO|ALLOW GO|BLOCK
+0 WAIT|BLOCK,WAIT|ALLOW,GO|BLOCK,GO|ALLOW 0
+0 0 WAIT|BLOCK,WAIT|ALLOW,GO|BLOCK,GO|ALLOW
+Name_State
+start goal trap
+Initial_State
+start
+Atomic_propositions
+goal safe
+Labelling
+0 1
+1 1
+0 0
+Number_of_agents
+2

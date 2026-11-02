@@ -1,0 +1,19 @@
+# A strategy of cost 2: p -> B; T -> A.
+Transition
+0 A 0 B
+0 0 B A
+0 0 A,B 0
+0 0 0 A,B
+Name_State
+start middle goal trap
+Initial_State
+start
+Atomic_propositions
+p goal
+Labelling
+0 0
+1 0
+0 1
+0 0
+Number_of_agents
+1

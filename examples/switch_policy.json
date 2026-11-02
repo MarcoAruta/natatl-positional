@@ -1,0 +1,6 @@
+{
+  "start": ["A"],
+  "middle": ["B"],
+  "goal": ["A"],
+  "trap": ["A"]
+}
